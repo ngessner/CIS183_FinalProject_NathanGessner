@@ -5,15 +5,96 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#36A368"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <LinearLayout
+        android:id="@+id/loginact_v_ll_container"
+        android:layout_width="420dp"
+        android:layout_height="778dp"
+        android:layout_marginTop="176dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="#FFFFFF"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:padding="24dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/loginact_v_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/poppins"
+            android:text="Log in to Your Account."
+            android:textColor="#4CAF50"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/loginact_v_et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/white"
+            android:drawableStart="@android:drawable/ic_menu_send"
+            android:fontFamily="@font/poppins"
+            android:hint="Email Address"
+            android:inputType="textEmailAddress"
+            android:padding="12dp" />
+
+        <EditText
+            android:id="@+id/loginact_v_et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/white"
+            android:drawableStart="@android:drawable/ic_lock_lock"
+            android:fontFamily="@font/poppins"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="12dp" />
+
+        <TextView
+            android:id="@+id/loginact_v_tv_forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/poppins"
+            android:text="Forgot Password?"
+            android:textColor="#4CAF50"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/loginact_v_btn_login"
+            android:layout_width="220dp"
+            android:layout_height="64dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#52B137"
+            android:fontFamily="@font/poppins"
+            android:text="Login"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/loginact_v_tv_signup_prompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:fontFamily="@font/poppins"
+            android:text="Don’t have an account?"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
