@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/home_v_tv_greeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hey, Username!"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:id="@+id/home_v_tv_task_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="7 Products today!"
+        android:textColor="#666666"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/home_v_tv_greeting" />
+
+    <EditText
+        android:id="@+id/home_v_et_search"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Find your product or material here..."
+        android:padding="12dp"
+        android:background="@drawable/search_bar_background"
+        android:drawableStart="@android:drawable/ic_menu_search"
+        android:drawablePadding="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/home_v_tv_task_count"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <TextView
+        android:id="@+id/home_v_tv_products_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Products"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/home_v_et_search"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:id="@+id/home_v_tv_see_all_products"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="See All"
+        android:textSize="14sp"
+        android:textColor="#FF5722"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/home_v_tv_products_title"
+        android:layout_marginEnd="16dp" />
+
+    <LinearLayout
+        android:id="@+id/home_v_ll_product_card"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:orientation="horizontal"
+        android:background="@drawable/product_card_background"
+        android:padding="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/home_v_tv_products_title"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp">
+
+        <TextView
+            android:id="@+id/home_v_tv_product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product Name"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/home_v_tv_materials_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Materials"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/home_v_ll_product_card"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:id="@+id/home_v_tv_see_all_materials"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="See All"
+        android:textSize="14sp"
+        android:textColor="#FF5722"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/home_v_tv_materials_title"
+        android:layout_marginEnd="16dp" />
+
+    <LinearLayout
+        android:id="@+id/home_v_ll_material_card"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:background="@drawable/material_card_background"
+        android:padding="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/home_v_tv_materials_title"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp">
+
+        <TextView
+            android:id="@+id/home_v_tv_material_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Material Name"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+    
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/home_v_bnv_bottom_navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        app:menu="@menu/bottom_nav_menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,22 +7,60 @@
     android:layout_height="match_parent"
     android:background="#FFFFFF"
     android:backgroundTint="#36A368"
-    tools:context=".MainActivity">
+    tools:context=".Login">
+
+    <LinearLayout
+        android:layout_width="416dp"
+        android:layout_height="367dp"
+        android:background="#FCFCFC"
+        android:orientation="horizontal"
+        android:translationZ="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginact_v_ll_container"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/loginact_v_tv_signup_prompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="95dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins"
+            android:text="Don't have an account?"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/loginact_v_tv_signup_prompt5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins"
+            android:text="Register"
+            android:textColor="#50BD31"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/loginact_v_ll_container"
-        android:layout_width="420dp"
-        android:layout_height="778dp"
-        android:layout_marginTop="176dp"
+        android:layout_width="406dp"
+        android:layout_height="413dp"
         android:background="@drawable/roundstyle"
-        android:backgroundTint="#FFFFFF"
+        android:backgroundTint="#FEFEFE"
         android:elevation="4dp"
         android:orientation="vertical"
         android:padding="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.35">
 
         <TextView
             android:id="@+id/loginact_v_tv_title"
@@ -31,35 +69,33 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="16dp"
             android:fontFamily="@font/poppins"
-            android:text="Log in to Your Account."
+            android:text="Login"
             android:textColor="#4CAF50"
-            android:textSize="18sp"
+            android:textSize="24sp"
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/loginact_v_et_email"
+            android:id="@+id/loginact_v_et_email5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="10dp"
             android:layout_marginBottom="8dp"
             android:background="@color/white"
-            android:drawableStart="@android:drawable/ic_menu_send"
+            android:drawableStart="@android:drawable/ic_menu_myplaces"
             android:fontFamily="@font/poppins"
-            android:hint="Email Address"
-            android:inputType="textEmailAddress"
+            android:hint="Username"
             android:padding="12dp" />
 
         <EditText
             android:id="@+id/loginact_v_et_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="10dp"
             android:layout_marginBottom="8dp"
             android:background="@color/white"
             android:drawableStart="@android:drawable/ic_lock_lock"
             android:fontFamily="@font/poppins"
             android:hint="Password"
-            android:inputType="textPassword"
             android:padding="12dp" />
 
         <TextView
@@ -67,34 +103,26 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="end"
+            android:layout_marginTop="8dp"
             android:layout_marginBottom="16dp"
             android:fontFamily="@font/poppins"
             android:text="Forgot Password?"
             android:textColor="#4CAF50"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/loginact_v_btn_login"
             android:layout_width="220dp"
             android:layout_height="64dp"
             android:layout_marginLeft="80dp"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="20dp"
             android:layout_marginBottom="16dp"
             android:backgroundTint="#52B137"
             android:fontFamily="@font/poppins"
-            android:text="Login"
+            android:text="LOGIN"
             android:textColor="@android:color/white"
             android:textSize="24sp" />
 
-        <TextView
-            android:id="@+id/loginact_v_tv_signup_prompt"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="100dp"
-            android:fontFamily="@font/poppins"
-            android:text="Don’t have an account?"
-            android:textColor="@color/black"
-            android:textSize="14sp" />
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
