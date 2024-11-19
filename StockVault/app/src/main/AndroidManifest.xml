@@ -13,6 +13,21 @@
         android:theme="@style/Theme.StockVault"
         tools:targetApi="31">
         <activity
+            android:name=".Profile"
+            android:exported="false" />
+        <activity
+            android:name=".Settings"
+            android:exported="false" />
+        <activity
+            android:name=".AddItems"
+            android:exported="false" />
+        <activity
+            android:name=".EditItems"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:label="@string/title_activity_view_items"
+            android:theme="@style/Theme.StockVault.Fullscreen" />
+        <activity
             android:name=".Dashboard"
             android:exported="false" />
         <activity

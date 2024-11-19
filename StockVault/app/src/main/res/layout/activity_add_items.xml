@@ -2,11 +2,12 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF">
+    android:background="#FFFFFF"
+    tools:context=".AddItems">
 
-    <!-- nav bar. this uses the menu xml for navigation which is just better than buttons really. -->
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/home_v_bnv_bottom_navigation"
         android:layout_width="0dp"
@@ -15,28 +16,14 @@
         android:layout_marginBottom="48dp"
         android:background="@drawable/rounded_nav_background"
         app:itemIconSize="32dp"
-        app:labelVisibilityMode="unlabeled"
         app:itemIconTint="@color/nav_icon_color"
+        app:labelVisibilityMode="unlabeled"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/menu_navbot" >
+        app:menu="@menu/menu_navbot">
 
     </com.google.android.material.bottomnavigation.BottomNavigationView>
-
-    <!-- acting as our drop shadow, i think it just looks nice -->
-    <View
-        android:id="@+id/shadow_view"
-        android:layout_width="382dp"
-        android:layout_height="54dp"
-        android:layout_marginHorizontal="16dp"
-        android:layout_marginTop="26dp"
-        android:background="@drawable/shadow_gradient"
-        app:layout_constraintEnd_toEndOf="@+id/home_v_bnv_bottom_navigation"
-        app:layout_constraintStart_toStartOf="@+id/home_v_bnv_bottom_navigation"
-        app:layout_constraintTop_toTopOf="@+id/home_v_bnv_bottom_navigation" />
-
-    <!-- tab layout for stocks and materials -->
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/dashboard_v_tl_tabs"
@@ -65,20 +52,4 @@
             android:layout_height="wrap_content"
             android:text="Materials" />
     </com.google.android.material.tabs.TabLayout>
-
-    <ListView
-        android:id="@+id/dashboard_v_lv_items"
-        android:layout_width="411dp"
-        android:layout_height="667dp"
-        android:layout_marginTop="16dp"
-        android:divider="@color/nav_icon_color"
-        android:dividerHeight="1dp"
-        android:padding="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/home_v_bnv_bottom_navigation"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/dashboard_v_tl_tabs"
-        app:layout_constraintVertical_bias="0.0" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

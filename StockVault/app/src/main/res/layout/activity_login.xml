@@ -10,9 +10,10 @@
     tools:context=".Login">
 
     <LinearLayout
-        android:layout_width="416dp"
-        android:layout_height="367dp"
-        android:background="#FCFCFC"
+        android:layout_width="406dp"
+        android:layout_height="368dp"
+        android:layout_marginStart="2dp"
+        android:background="#FDFDFD"
         android:orientation="horizontal"
         android:translationZ="90dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -20,7 +21,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/loginact_v_ll_container"
-        app:layout_constraintVertical_bias="1.0">
+        app:layout_constraintVertical_bias="0.614">
 
         <TextView
             android:id="@+id/loginact_v_tv_signup_prompt"
@@ -50,6 +51,7 @@
         android:id="@+id/loginact_v_ll_container"
         android:layout_width="406dp"
         android:layout_height="413dp"
+        android:layout_marginStart="2dp"
         android:background="@drawable/roundstyle"
         android:backgroundTint="#FEFEFE"
         android:elevation="4dp"
