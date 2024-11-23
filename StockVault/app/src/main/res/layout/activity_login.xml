@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
-    android:backgroundTint="#36A368"
+    android:backgroundTint="#8BDE62"
     tools:context=".Login">
 
     <LinearLayout
@@ -86,7 +86,9 @@
             android:drawableStart="@android:drawable/ic_menu_myplaces"
             android:fontFamily="@font/poppins"
             android:hint="Username"
-            android:padding="12dp" />
+            android:padding="12dp"
+            android:textColor="#2E2E2E"
+            android:textColorHint="#777777" />
 
         <EditText
             android:id="@+id/loginact_v_et_password"
@@ -98,20 +100,9 @@
             android:drawableStart="@android:drawable/ic_lock_lock"
             android:fontFamily="@font/poppins"
             android:hint="Password"
-            android:padding="12dp" />
-
-        <TextView
-            android:id="@+id/loginact_v_tv_forgot_password"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="end"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="16dp"
-            android:fontFamily="@font/poppins"
-            android:text="Forgot Password?"
-            android:textColor="#4CAF50"
-            android:textSize="14sp"
-            android:textStyle="bold" />
+            android:padding="12dp"
+            android:textColor="#2E2E2E"
+            android:textColorHint="#777777" />
 
         <Button
             android:id="@+id/loginact_v_btn_login"
@@ -124,6 +115,7 @@
             android:fontFamily="@font/poppins"
             android:text="LOGIN"
             android:textColor="@android:color/white"
+            android:textColorHint="#777777"
             android:textSize="24sp" />
 
     </LinearLayout>

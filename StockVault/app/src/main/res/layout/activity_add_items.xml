@@ -9,7 +9,7 @@
     tools:context=".AddItems">
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/home_v_bnv_bottom_navigation"
+        android:id="@+id/view_v_bnv_bottom_navigation"
         android:layout_width="0dp"
         android:layout_height="72dp"
         android:layout_marginHorizontal="16dp"
@@ -25,8 +25,19 @@
 
     </com.google.android.material.bottomnavigation.BottomNavigationView>
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="131dp"
+        android:layout_marginBottom="579dp"
+        android:text="add items"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editItems_v_tl_tabs" />
+
     <com.google.android.material.tabs.TabLayout
-        android:id="@+id/dashboard_v_tl_tabs"
+        android:id="@+id/editItems_v_tl_tabs"
         android:layout_width="416dp"
         android:layout_height="68dp"
         android:background="#8BDE62"
@@ -52,4 +63,15 @@
             android:layout_height="wrap_content"
             android:text="Materials" />
     </com.google.android.material.tabs.TabLayout>
+
+    <View
+        android:id="@+id/shadow_view"
+        android:layout_width="382dp"
+        android:layout_height="54dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/shadow_gradient"
+        app:layout_constraintEnd_toEndOf="@+id/view_v_bnv_bottom_navigation"
+        app:layout_constraintStart_toStartOf="@+id/view_v_bnv_bottom_navigation"
+        app:layout_constraintTop_toTopOf="@+id/view_v_bnv_bottom_navigation" />
 </androidx.constraintlayout.widget.ConstraintLayout>

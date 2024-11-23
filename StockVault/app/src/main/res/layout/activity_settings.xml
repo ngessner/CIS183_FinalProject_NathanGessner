@@ -48,7 +48,9 @@
             android:background="@color/white"
             android:fontFamily="@font/poppins"
             android:hint="First Name"
-            android:padding="12dp" />
+            android:padding="12dp"
+            android:textColor="#2E2E2E"
+            android:textColorHint="#777777" />
 
         <EditText
             android:id="@+id/settings_v_et_lastname"
@@ -59,7 +61,9 @@
             android:background="@color/white"
             android:fontFamily="@font/poppins"
             android:hint="Last Name"
-            android:padding="12dp" />
+            android:padding="12dp"
+            android:textColor="#2E2E2E"
+            android:textColorHint="#777777" />
 
         <EditText
             android:id="@+id/settings_v_et_username"
@@ -70,7 +74,9 @@
             android:background="@color/white"
             android:fontFamily="@font/poppins"
             android:hint="Username"
-            android:padding="12dp" />
+            android:padding="12dp"
+            android:textColor="#2E2E2E"
+            android:textColorHint="#777777" />
 
         <EditText
             android:id="@+id/settings_v_et_email"
@@ -81,7 +87,9 @@
             android:background="@color/white"
             android:fontFamily="@font/poppins"
             android:hint="Email"
-            android:padding="12dp" />
+            android:padding="12dp"
+            android:textColor="#2E2E2E"
+            android:textColorHint="#777777" />
 
         <EditText
             android:id="@+id/settings_v_et_password"
@@ -93,7 +101,9 @@
             android:fontFamily="@font/poppins"
             android:hint="Password"
             android:inputType="textPassword"
-            android:padding="12dp" />
+            android:padding="12dp"
+            android:textColor="#2E2E2E"
+            android:textColorHint="#777777" />
 
         <!-- Save Button -->
         <Button
@@ -110,7 +120,7 @@
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/settings_v_btn_save2"
+            android:id="@+id/settings_v_btn_back"
             android:layout_width="216dp"
             android:layout_height="64dp"
             android:layout_gravity="center"

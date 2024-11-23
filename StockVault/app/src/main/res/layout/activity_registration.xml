@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
-    android:backgroundTint="#36A368"
+    android:backgroundTint="#8cdf62"
     tools:context=".Registration">
 
     <LinearLayout
@@ -84,7 +84,9 @@
             android:drawableStart="@android:drawable/ic_menu_myplaces"
             android:fontFamily="@font/poppins"
             android:hint="Username"
-            android:padding="12dp" />
+            android:padding="12dp"
+            android:textColor="#2E2E2E"
+            android:textColorHint="#777777" />
 
         <EditText
             android:id="@+id/regact_v_et_email"
@@ -96,7 +98,9 @@
             android:drawableStart="@android:drawable/ic_menu_send"
             android:fontFamily="@font/poppins"
             android:hint="Email Address"
-            android:padding="12dp" />
+            android:padding="12dp"
+            android:textColor="#2E2E2E"
+            android:textColorHint="#777777" />
 
         <EditText
             android:id="@+id/regact_v_et_password"
@@ -108,7 +112,9 @@
             android:drawableStart="@android:drawable/ic_lock_lock"
             android:fontFamily="@font/poppins"
             android:hint="Password"
-            android:padding="12dp" />
+            android:padding="12dp"
+            android:textColor="#2E2E2E"
+            android:textColorHint="#777777" />
 
         <EditText
             android:id="@+id/regact_v_et_confirm_password"
@@ -119,20 +125,9 @@
             android:drawableStart="@android:drawable/ic_lock_lock"
             android:fontFamily="@font/poppins"
             android:hint="Confirm Password"
-            android:padding="12dp" />
-
-        <TextView
-            android:id="@+id/regact_v_tv_forgot_password"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="end"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="16dp"
-            android:fontFamily="@font/poppins"
-            android:text="Forgot Password?"
-            android:textColor="#4CAF50"
-            android:textSize="14sp"
-            android:textStyle="bold" />
+            android:padding="12dp"
+            android:textColor="#2E2E2E"
+            android:textColorHint="#777777" />
 
         <Button
             android:id="@+id/regact_v_btn_sign_up"

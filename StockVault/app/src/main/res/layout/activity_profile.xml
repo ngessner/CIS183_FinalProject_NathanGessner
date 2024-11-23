@@ -9,7 +9,7 @@
     tools:context=".Profile">
 
     <LinearLayout
-        android:id="@+id/settings_v_ll_container"
+        android:id="@+id/prof_v_ll_container"
         android:layout_width="406dp"
         android:layout_height="wrap_content"
         android:background="@drawable/roundstyle"
@@ -26,7 +26,7 @@
 
         <!-- Title -->
         <TextView
-            android:id="@+id/settings_v_tv_title"
+            android:id="@+id/prof_v_tv_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
@@ -39,7 +39,7 @@
 
         <!-- Editable Fields -->
         <EditText
-            android:id="@+id/settings_v_et_firstname"
+            android:id="@+id/prof_v_et_firstname"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -47,10 +47,12 @@
             android:background="@color/white"
             android:fontFamily="@font/poppins"
             android:hint="First Name"
-            android:padding="12dp" />
+            android:padding="12dp"
+            android:textColor="#2E2E2E"
+            android:textColorHint="#777777" />
 
         <EditText
-            android:id="@+id/settings_v_et_lastname"
+            android:id="@+id/prof_v_et_lastname"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -58,10 +60,12 @@
             android:background="@color/white"
             android:fontFamily="@font/poppins"
             android:hint="Last Name"
-            android:padding="12dp" />
+            android:padding="12dp"
+            android:textColor="#2E2E2E"
+            android:textColorHint="#777777" />
 
         <EditText
-            android:id="@+id/settings_v_et_username"
+            android:id="@+id/prof_v_et_username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -69,10 +73,12 @@
             android:background="@color/white"
             android:fontFamily="@font/poppins"
             android:hint="Username"
-            android:padding="12dp" />
+            android:padding="12dp"
+            android:textColor="#2E2E2E"
+            android:textColorHint="#777777" />
 
         <EditText
-            android:id="@+id/settings_v_et_email"
+            android:id="@+id/prof_v_et_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -80,11 +86,13 @@
             android:background="@color/white"
             android:fontFamily="@font/poppins"
             android:hint="Email"
-            android:padding="12dp" />
+            android:padding="12dp"
+            android:textColor="#2E2E2E"
+            android:textColorHint="#777777" />
 
         <!-- Save Button -->
         <Button
-            android:id="@+id/settings_v_btn_save"
+            android:id="@+id/prof_v_btn_back"
             android:layout_width="220dp"
             android:layout_height="64dp"
             android:layout_gravity="center"
