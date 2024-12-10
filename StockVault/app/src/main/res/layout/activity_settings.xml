@@ -92,7 +92,7 @@
             android:textColorHint="#777777" />
 
         <EditText
-            android:id="@+id/settings_v_et_password"
+            android:id="@+id/settings_v_et_pass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -106,6 +106,20 @@
             android:textColorHint="#777777" />
 
         <!-- Save Button -->
+        <EditText
+            android:id="@+id/settings_v_et_confirmPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/white"
+            android:fontFamily="@font/poppins"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:textColor="#2E2E2E"
+            android:textColorHint="#777777" />
+
         <Button
             android:id="@+id/settings_v_btn_save"
             android:layout_width="220dp"

@@ -11,8 +11,8 @@
 
     <LinearLayout
         android:id="@+id/regact_v_ll_bottom_container"
-        android:layout_width="411dp"
-        android:layout_height="218dp"
+        android:layout_width="416dp"
+        android:layout_height="157dp"
         android:background="#FFFFFF"
         android:orientation="horizontal"
         android:translationZ="90dp"
@@ -28,7 +28,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="120dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="30dp"
             android:fontFamily="@font/poppins"
             android:text="Have an account?"
             android:textColor="@color/black"
@@ -39,7 +39,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="30dp"
             android:fontFamily="@font/poppins"
             android:text="Sign In"
             android:textColor="#50BD31"
@@ -49,8 +49,8 @@
 
     <LinearLayout
         android:id="@+id/regact_v_ll_container"
-        android:layout_width="415dp"
-        android:layout_height="563dp"
+        android:layout_width="413dp"
+        android:layout_height="645dp"
         android:layout_marginTop="176dp"
         android:background="@drawable/roundstyle"
         android:backgroundTint="#FFFFFF"
@@ -78,7 +78,7 @@
             android:id="@+id/regact_v_et_username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="6dp"
             android:layout_marginBottom="8dp"
             android:background="@color/white"
             android:drawableStart="@android:drawable/ic_menu_myplaces"
@@ -89,10 +89,38 @@
             android:textColorHint="#777777" />
 
         <EditText
+            android:id="@+id/regact_v_et_first_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/white"
+            android:drawableStart="@android:drawable/ic_menu_mylocation"
+            android:fontFamily="@font/poppins"
+            android:hint="First Name"
+            android:padding="12dp"
+            android:textColor="#2E2E2E"
+            android:textColorHint="#777777" />
+
+        <EditText
+            android:id="@+id/regact_v_et_last_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/white"
+            android:drawableStart="@android:drawable/ic_menu_mylocation"
+            android:fontFamily="@font/poppins"
+            android:hint="Last Name"
+            android:padding="12dp"
+            android:textColor="#2E2E2E"
+            android:textColorHint="#777777" />
+
+        <EditText
             android:id="@+id/regact_v_et_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="6dp"
             android:layout_marginBottom="8dp"
             android:background="@color/white"
             android:drawableStart="@android:drawable/ic_menu_send"
@@ -106,12 +134,13 @@
             android:id="@+id/regact_v_et_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="6dp"
             android:layout_marginBottom="8dp"
             android:background="@color/white"
             android:drawableStart="@android:drawable/ic_lock_lock"
             android:fontFamily="@font/poppins"
             android:hint="Password"
+            android:inputType="textPassword"
             android:padding="12dp"
             android:textColor="#2E2E2E"
             android:textColorHint="#777777" />
@@ -120,11 +149,12 @@
             android:id="@+id/regact_v_et_confirm_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="6dp"
             android:background="@color/white"
             android:drawableStart="@android:drawable/ic_lock_lock"
             android:fontFamily="@font/poppins"
             android:hint="Confirm Password"
+            android:inputType="textPassword"
             android:padding="12dp"
             android:textColor="#2E2E2E"
             android:textColorHint="#777777" />

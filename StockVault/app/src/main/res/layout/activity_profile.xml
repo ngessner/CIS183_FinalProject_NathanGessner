@@ -37,60 +37,60 @@
             android:textSize="24sp"
             android:textStyle="bold" />
 
-        <!-- Editable Fields -->
-        <EditText
-            android:id="@+id/prof_v_et_firstname"
+        <!-- Non-editable Fields -->
+        <TextView
+            android:id="@+id/prof_v_tv_firstname"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="8dp"
             android:background="@color/white"
             android:fontFamily="@font/poppins"
-            android:hint="First Name"
             android:padding="12dp"
+            android:text="First Name"
             android:textColor="#2E2E2E"
-            android:textColorHint="#777777" />
+            android:textSize="16sp" />
 
-        <EditText
-            android:id="@+id/prof_v_et_lastname"
+        <TextView
+            android:id="@+id/prof_v_tv_lastname"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="8dp"
             android:background="@color/white"
             android:fontFamily="@font/poppins"
-            android:hint="Last Name"
             android:padding="12dp"
+            android:text="Last Name"
             android:textColor="#2E2E2E"
-            android:textColorHint="#777777" />
+            android:textSize="16sp" />
 
-        <EditText
-            android:id="@+id/prof_v_et_username"
+        <TextView
+            android:id="@+id/prof_v_tv_username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="8dp"
             android:background="@color/white"
             android:fontFamily="@font/poppins"
-            android:hint="Username"
             android:padding="12dp"
+            android:text="Username"
             android:textColor="#2E2E2E"
-            android:textColorHint="#777777" />
+            android:textSize="16sp" />
 
-        <EditText
-            android:id="@+id/prof_v_et_email"
+        <TextView
+            android:id="@+id/prof_v_tv_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="8dp"
             android:background="@color/white"
             android:fontFamily="@font/poppins"
-            android:hint="Email"
             android:padding="12dp"
+            android:text="Email"
             android:textColor="#2E2E2E"
-            android:textColorHint="#777777" />
+            android:textSize="16sp" />
 
-        <!-- Save Button -->
+        <!-- Back Button -->
         <Button
             android:id="@+id/prof_v_btn_back"
             android:layout_width="220dp"
@@ -105,5 +105,4 @@
             android:textStyle="bold" />
 
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

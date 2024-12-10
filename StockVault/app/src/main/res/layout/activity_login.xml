@@ -100,6 +100,7 @@
             android:drawableStart="@android:drawable/ic_lock_lock"
             android:fontFamily="@font/poppins"
             android:hint="Password"
+            android:inputType="textPassword"
             android:padding="12dp"
             android:textColor="#2E2E2E"
             android:textColorHint="#777777" />

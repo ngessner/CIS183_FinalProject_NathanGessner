@@ -1,12 +1,206 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/additems_v_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
     tools:context=".AddItems">
+
+    <LinearLayout
+        android:id="@+id/addItems_v_ll_container"
+        android:layout_width="409dp"
+        android:layout_height="632dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="#FEFEFE"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:translationZ="200dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.43">
+
+        <TextView
+            android:id="@+id/additems_v_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/poppins"
+            android:text="Create Product"
+            android:textColor="#4CAF50"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/additems_v_et_product_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/white"
+            android:fontFamily="@font/poppins"
+            android:hint="Product Name"
+            android:padding="12dp"
+            android:textColor="#2E2E2E"
+            android:textColorHint="#777777" />
+
+        <EditText
+            android:id="@+id/additems_v_et_product_desc"
+            android:layout_width="match_parent"
+            android:layout_height="153dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/poppins"
+            android:gravity="top"
+            android:hint="Description"
+            android:padding="12dp"
+            android:paddingTop="30dp"
+            android:textAlignment="viewStart"
+            android:textColor="#2E2E2E"
+            android:textColorHint="#777777" />
+
+        <EditText
+            android:id="@+id/additems_v_et_product_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/white"
+            android:fontFamily="@font/poppins"
+            android:hint="Price"
+            android:inputType="numberDecimal"
+            android:padding="12dp"
+            android:textColor="#2E2E2E"
+            android:textColorHint="#777777" />
+
+        <EditText
+            android:id="@+id/additems_v_et_product_stock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/white"
+            android:fontFamily="@font/poppins"
+            android:hint="Stock Quantity"
+            android:inputType="number"
+            android:padding="12dp"
+            android:textColor="#2E2E2E"
+            android:textColorHint="#777777" />
+
+        <Button
+            android:id="@+id/additems_v_btn_save"
+            android:layout_width="220dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#52B137"
+            android:fontFamily="@font/poppins"
+            android:text="SAVE"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/additems_v_ll_material_container"
+        android:layout_width="402dp"
+        android:layout_height="633dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="#FEFEFE"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:translationZ="200dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.43">
+
+        <TextView
+            android:id="@+id/additems_v_tv_material_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/poppins"
+            android:text="Create Material"
+            android:textColor="#4CAF50"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/additems_v_et_material_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp"
+            android:background="#FFFFFF"
+            android:fontFamily="@font/poppins"
+            android:hint="Material Name"
+            android:padding="12dp"
+            android:textColor="#2E2E2E"
+            android:textColorHint="#777777" />
+
+        <EditText
+            android:id="@+id/additems_v_et_material_desc"
+            android:layout_width="355dp"
+            android:layout_height="153dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/poppins"
+            android:gravity="top"
+            android:hint="Description"
+            android:padding="12dp"
+            android:paddingTop="30dp"
+            android:textAlignment="viewStart"
+            android:textColor="#2E2E2E"
+            android:textColorHint="#777777" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="359dp"
+            android:layout_height="67dp"
+            android:spinnerMode="dropdown" />
+
+        <EditText
+            android:id="@+id/additems_v_et_material_quantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp"
+            android:background="#FFFFFF"
+            android:fontFamily="@font/poppins"
+            android:hint="Quantity"
+            android:inputType="number"
+            android:padding="12dp"
+            android:textColor="#2E2E2E"
+            android:textColorHint="#777777" />
+
+        <Button
+            android:id="@+id/additems_v_btn_mat_exit"
+            android:layout_width="220dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#52B137"
+            android:fontFamily="@font/poppins"
+            android:text="SAVE"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/view_v_bnv_bottom_navigation"
@@ -25,19 +219,8 @@
 
     </com.google.android.material.bottomnavigation.BottomNavigationView>
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="131dp"
-        android:layout_marginBottom="579dp"
-        android:text="add items"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editItems_v_tl_tabs" />
-
     <com.google.android.material.tabs.TabLayout
-        android:id="@+id/editItems_v_tl_tabs"
+        android:id="@+id/additems_v_tl_tabs"
         android:layout_width="416dp"
         android:layout_height="68dp"
         android:background="#8BDE62"
@@ -49,7 +232,8 @@
         app:tabIndicatorHeight="4dp"
         app:tabMode="fixed"
         app:tabSelectedTextColor="#000000"
-        app:tabTextColor="#888888">
+        app:tabTextColor="#888888"
+        app:tabTextAppearance="@style/CustomTabTextStyle">
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/tab_products"
