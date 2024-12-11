@@ -14,6 +14,8 @@ a user-friendly interface.
 
 ![image (1)](https://github.com/user-attachments/assets/4d209035-35ac-4e66-ad52-0074fd9470ba)
 ![image (2)](https://github.com/user-attachments/assets/2be96d25-9792-44ec-8bba-eaba532fd89b)
+![image](https://github.com/user-attachments/assets/31d5be98-287a-4711-af98-a7854a0213ff)
+
 
 ### Features:
 Inventory management
