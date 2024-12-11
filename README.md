@@ -12,6 +12,9 @@ and units effortlessly. The app allows users to add, edit, and
 remove items, ensuring up-to-date inventory records while offering
 a user-friendly interface.
 
+![image (1)](https://github.com/user-attachments/assets/4d209035-35ac-4e66-ad52-0074fd9470ba)
+![image (2)](https://github.com/user-attachments/assets/2be96d25-9792-44ec-8bba-eaba532fd89b)
+
 ### Features:
 Inventory management
    - You can read, add, edit, delete products and materials respectively
